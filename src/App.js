@@ -6,6 +6,7 @@ import ChildrenProp from './prop-pass/ChildrenProp';
 import WelcomeDialog from './composition/CompositionDemo';
 import { SuccessLabel, ErrorLabel } from './inheritance/InheritanceDemo';
 import { SuccessLabel2, ErrorLabel2 } from './composition/CompositionDemo2';
+import ContextDemo from './context/ContextDemo';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         </header>
         <PropDrillingExp />
         <ChildrenProp />
+        <ContextDemo/>
         <WelcomeDialog />
         <SuccessLabel> Success Label </SuccessLabel>
         <ErrorLabel>Error Label</ErrorLabel>
