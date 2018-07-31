@@ -7,6 +7,7 @@ import WelcomeDialog from './composition/CompositionDemo';
 import { SuccessLabel, ErrorLabel } from './inheritance/InheritanceDemo';
 import { SuccessLabel2, ErrorLabel2 } from './composition/CompositionDemo2';
 import ContextDemo from './context/ContextDemo';
+import WrappedComponent from './hoc/BaseEmp';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
         <ErrorLabel>Error Label</ErrorLabel>
         <SuccessLabel2> Success Label </SuccessLabel2>
         <ErrorLabel2> Error Label </ErrorLabel2>
+        <WrappedComponent/>
       </div>
     );
   }
