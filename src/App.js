@@ -8,12 +8,13 @@ import { SuccessLabel, ErrorLabel } from './inheritance/InheritanceDemo';
 import { SuccessLabel2, ErrorLabel2 } from './composition/CompositionDemo2';
 import ContextDemo from './context/ContextDemo';
 import WrappedComponent from './hoc/BaseEmp';
+import PureComponentDemo from './pure-component/PureComponent';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React Feature Demo</h1>
         </header>
@@ -25,7 +26,8 @@ class App extends Component {
         <ErrorLabel>Error Label</ErrorLabel>
         <SuccessLabel2> Success Label </SuccessLabel2>
         <ErrorLabel2> Error Label </ErrorLabel2>
-        <WrappedComponent/>
+        <WrappedComponent/> */}
+        <PureComponentDemo/>
       </div>
     );
   }
