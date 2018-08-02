@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import axios from 'axios';
+
 export class FetchDemo extends Component {
     constructor(props) {
       super(props);
@@ -27,6 +29,10 @@ export class FetchDemo extends Component {
         .catch(error => console.error(`Fetch Error =\n`, error));
     };
     componentDidMount() {
+      axios.get(`http://localhost:5000/api/userList`)
+      .then(res => {
+        console.log('from Axios',res.data);
+      })
       fetch("http://localhost:5000/api/userList")
         .then(res => res.json())
         .then(
