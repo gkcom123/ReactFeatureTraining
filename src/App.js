@@ -9,6 +9,7 @@ import { SuccessLabel2, ErrorLabel2 } from './composition/CompositionDemo2';
 import ContextDemo from './context/ContextDemo';
 import WrappedComponent from './hoc/BaseEmp';
 import PureComponentDemo from './pure-component/PureComponent';
+import { FetchDemo } from './serviceCall/FetchDemo';
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
         <ErrorLabel2> Error Label </ErrorLabel2>
         <WrappedComponent/> */}
         <PureComponentDemo/>
+        <FetchDemo/>
       </div>
     );
   }
